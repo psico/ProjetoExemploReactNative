@@ -10,10 +10,15 @@ import Plataformas from './src/componentes/Plataformas'
 import ValidarProps from "./src/componentes/ValidarProps";
 import Evento from "./src/componentes/Eventos";
 import Avo from "./src/componentes/ComunicacaoDireta";
+import TextoSincronizado from "./src/componentes/ComunicacaoIndireta";
 
 // export default () => <View><Text>Testfgge333ge</Text></View>
 
 export default createDrawerNavigator({
+    TextoSincronizado: {
+        screen: TextoSincronizado,
+        navigationOptions: {title: 'Texto Sincronizado'}
+    },
     Avo: {
         screen: () => <Avo nome='João' sobrenome='Silva'/>
     },
