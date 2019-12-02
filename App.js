@@ -11,10 +11,20 @@ import ValidarProps from "./src/componentes/ValidarProps";
 import Evento from "./src/componentes/Eventos";
 import Avo from "./src/componentes/ComunicacaoDireta";
 import TextoSincronizado from "./src/componentes/ComunicacaoIndireta";
+import ListaFlex from "./src/componentes/ListaFlex";
+import Flex from "./src/componentes/Flex";
+
 
 // export default () => <View><Text>Testfgge333ge</Text></View>
 
 export default createDrawerNavigator({
+    Flex: {
+        screen: Flex
+    },
+    ListaFlex: {
+        screen: ListaFlex,
+        navigationOptions: {title: 'Lista (Flex Box)'}
+    },
     TextoSincronizado: {
         screen: TextoSincronizado,
         navigationOptions: {title: 'Texto Sincronizado'}
